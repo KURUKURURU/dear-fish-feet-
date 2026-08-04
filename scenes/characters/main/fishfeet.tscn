@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://omypret7kbkd"]
+
+[ext_resource type="Script" uid="uid://g5r6w0uu23p1" path="res://fishfeet.gd" id="1_7r8rt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3sglg"]
+size = Vector2(42, 39)
+
+[node name="Fishfeet" type="CharacterBody2D" unique_id=886998822]
+script = ExtResource("1_7r8rt")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1662050190]
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=466394939]
+position = Vector2(0, -20.5)
+shape = SubResource("RectangleShape2D_3sglg")
